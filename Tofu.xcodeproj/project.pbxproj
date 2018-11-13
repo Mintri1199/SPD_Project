@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		449B6D97219A062800446B6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B6D96219A062800446B6A /* AppDelegate.swift */; };
+		449B6D99219A062800446B6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B6D98219A062800446B6A /* ViewController.swift */; };
+		449B6D9C219A062800446B6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449B6D9A219A062800446B6A /* Main.storyboard */; };
+		449B6D9F219A062800446B6A /* Tofu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 449B6D9D219A062800446B6A /* Tofu.xcdatamodeld */; };
+		449B6DA1219A062900446B6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449B6DA0219A062900446B6A /* Assets.xcassets */; };
+		449B6DA4219A062900446B6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449B6DA2219A062900446B6A /* LaunchScreen.storyboard */; };
+		449B6DAF219A062900446B6A /* TofuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B6DAE219A062900446B6A /* TofuTests.swift */; };
+		449B6DBA219A062900446B6A /* TofuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B6DB9219A062900446B6A /* TofuUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		449B6DAB219A062900446B6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 449B6D8B219A062800446B6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 449B6D92219A062800446B6A;
+			remoteInfo = Tofu;
+		};
+		449B6DB6219A062900446B6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 449B6D8B219A062800446B6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 449B6D92219A062800446B6A;
+			remoteInfo = Tofu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		449B6D93219A062800446B6A /* Tofu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tofu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		449B6D96219A062800446B6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		449B6D98219A062800446B6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		449B6D9B219A062800446B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		449B6D9E219A062800446B6A /* Tofu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tofu.xcdatamodel; sourceTree = "<group>"; };
+		449B6DA0219A062900446B6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		449B6DA3219A062900446B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		449B6DA5219A062900446B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		449B6DAA219A062900446B6A /* TofuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TofuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		449B6DAE219A062900446B6A /* TofuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TofuTests.swift; sourceTree = "<group>"; };
+		449B6DB0219A062900446B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		449B6DB5219A062900446B6A /* TofuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TofuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		449B6DB9219A062900446B6A /* TofuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TofuUITests.swift; sourceTree = "<group>"; };
+		449B6DBB219A062900446B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		449B6D90219A062800446B6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449B6DA7219A062900446B6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449B6DB2219A062900446B6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		449B6D8A219A062800446B6A = {
+			isa = PBXGroup;
+			children = (
+				449B6D95219A062800446B6A /* Tofu */,
+				449B6DAD219A062900446B6A /* TofuTests */,
+				449B6DB8219A062900446B6A /* TofuUITests */,
+				449B6D94219A062800446B6A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		449B6D94219A062800446B6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				449B6D93219A062800446B6A /* Tofu.app */,
+				449B6DAA219A062900446B6A /* TofuTests.xctest */,
+				449B6DB5219A062900446B6A /* TofuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		449B6D95219A062800446B6A /* Tofu */ = {
+			isa = PBXGroup;
+			children = (
+				449B6D96219A062800446B6A /* AppDelegate.swift */,
+				449B6D98219A062800446B6A /* ViewController.swift */,
+				449B6D9A219A062800446B6A /* Main.storyboard */,
+				449B6DA0219A062900446B6A /* Assets.xcassets */,
+				449B6DA2219A062900446B6A /* LaunchScreen.storyboard */,
+				449B6DA5219A062900446B6A /* Info.plist */,
+				449B6D9D219A062800446B6A /* Tofu.xcdatamodeld */,
+			);
+			path = Tofu;
+			sourceTree = "<group>";
+		};
+		449B6DAD219A062900446B6A /* TofuTests */ = {
+			isa = PBXGroup;
+			children = (
+				449B6DAE219A062900446B6A /* TofuTests.swift */,
+				449B6DB0219A062900446B6A /* Info.plist */,
+			);
+			path = TofuTests;
+			sourceTree = "<group>";
+		};
+		449B6DB8219A062900446B6A /* TofuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				449B6DB9219A062900446B6A /* TofuUITests.swift */,
+				449B6DBB219A062900446B6A /* Info.plist */,
+			);
+			path = TofuUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		449B6D92219A062800446B6A /* Tofu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 449B6DBE219A062900446B6A /* Build configuration list for PBXNativeTarget "Tofu" */;
+			buildPhases = (
+				449B6D8F219A062800446B6A /* Sources */,
+				449B6D90219A062800446B6A /* Frameworks */,
+				449B6D91219A062800446B6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tofu;
+			productName = Tofu;
+			productReference = 449B6D93219A062800446B6A /* Tofu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		449B6DA9219A062900446B6A /* TofuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 449B6DC1219A062900446B6A /* Build configuration list for PBXNativeTarget "TofuTests" */;
+			buildPhases = (
+				449B6DA6219A062900446B6A /* Sources */,
+				449B6DA7219A062900446B6A /* Frameworks */,
+				449B6DA8219A062900446B6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				449B6DAC219A062900446B6A /* PBXTargetDependency */,
+			);
+			name = TofuTests;
+			productName = TofuTests;
+			productReference = 449B6DAA219A062900446B6A /* TofuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		449B6DB4219A062900446B6A /* TofuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 449B6DC4219A062900446B6A /* Build configuration list for PBXNativeTarget "TofuUITests" */;
+			buildPhases = (
+				449B6DB1219A062900446B6A /* Sources */,
+				449B6DB2219A062900446B6A /* Frameworks */,
+				449B6DB3219A062900446B6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				449B6DB7219A062900446B6A /* PBXTargetDependency */,
+			);
+			name = TofuUITests;
+			productName = TofuUITests;
+			productReference = 449B6DB5219A062900446B6A /* TofuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		449B6D8B219A062800446B6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Jackson Ho";
+				TargetAttributes = {
+					449B6D92219A062800446B6A = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					449B6DA9219A062900446B6A = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 449B6D92219A062800446B6A;
+					};
+					449B6DB4219A062900446B6A = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 449B6D92219A062800446B6A;
+					};
+				};
+			};
+			buildConfigurationList = 449B6D8E219A062800446B6A /* Build configuration list for PBXProject "Tofu" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 449B6D8A219A062800446B6A;
+			productRefGroup = 449B6D94219A062800446B6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				449B6D92219A062800446B6A /* Tofu */,
+				449B6DA9219A062900446B6A /* TofuTests */,
+				449B6DB4219A062900446B6A /* TofuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		449B6D91219A062800446B6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449B6DA4219A062900446B6A /* LaunchScreen.storyboard in Resources */,
+				449B6DA1219A062900446B6A /* Assets.xcassets in Resources */,
+				449B6D9C219A062800446B6A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449B6DA8219A062900446B6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449B6DB3219A062900446B6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		449B6D8F219A062800446B6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449B6D99219A062800446B6A /* ViewController.swift in Sources */,
+				449B6D97219A062800446B6A /* AppDelegate.swift in Sources */,
+				449B6D9F219A062800446B6A /* Tofu.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449B6DA6219A062900446B6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449B6DAF219A062900446B6A /* TofuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449B6DB1219A062900446B6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449B6DBA219A062900446B6A /* TofuUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		449B6DAC219A062900446B6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 449B6D92219A062800446B6A /* Tofu */;
+			targetProxy = 449B6DAB219A062900446B6A /* PBXContainerItemProxy */;
+		};
+		449B6DB7219A062900446B6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 449B6D92219A062800446B6A /* Tofu */;
+			targetProxy = 449B6DB6219A062900446B6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		449B6D9A219A062800446B6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				449B6D9B219A062800446B6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		449B6DA2219A062900446B6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				449B6DA3219A062900446B6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		449B6DBC219A062900446B6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		449B6DBD219A062900446B6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		449B6DBF219A062900446B6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XYLZ368J9Q;
+				INFOPLIST_FILE = Tofu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.jacksonHo.Tofu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		449B6DC0219A062900446B6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XYLZ368J9Q;
+				INFOPLIST_FILE = Tofu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.jacksonHo.Tofu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		449B6DC2219A062900446B6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XYLZ368J9Q;
+				INFOPLIST_FILE = TofuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.jacksonHo.TofuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tofu.app/Tofu";
+			};
+			name = Debug;
+		};
+		449B6DC3219A062900446B6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XYLZ368J9Q;
+				INFOPLIST_FILE = TofuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.jacksonHo.TofuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tofu.app/Tofu";
+			};
+			name = Release;
+		};
+		449B6DC5219A062900446B6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XYLZ368J9Q;
+				INFOPLIST_FILE = TofuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.jacksonHo.TofuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tofu;
+			};
+			name = Debug;
+		};
+		449B6DC6219A062900446B6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XYLZ368J9Q;
+				INFOPLIST_FILE = TofuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.jacksonHo.TofuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tofu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		449B6D8E219A062800446B6A /* Build configuration list for PBXProject "Tofu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				449B6DBC219A062900446B6A /* Debug */,
+				449B6DBD219A062900446B6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		449B6DBE219A062900446B6A /* Build configuration list for PBXNativeTarget "Tofu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				449B6DBF219A062900446B6A /* Debug */,
+				449B6DC0219A062900446B6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		449B6DC1219A062900446B6A /* Build configuration list for PBXNativeTarget "TofuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				449B6DC2219A062900446B6A /* Debug */,
+				449B6DC3219A062900446B6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		449B6DC4219A062900446B6A /* Build configuration list for PBXNativeTarget "TofuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				449B6DC5219A062900446B6A /* Debug */,
+				449B6DC6219A062900446B6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		449B6D9D219A062800446B6A /* Tofu.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				449B6D9E219A062800446B6A /* Tofu.xcdatamodel */,
+			);
+			currentVersion = 449B6D9E219A062800446B6A /* Tofu.xcdatamodel */;
+			path = Tofu.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 449B6D8B219A062800446B6A /* Project object */;
+}
