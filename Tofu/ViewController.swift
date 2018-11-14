@@ -12,14 +12,18 @@ extension UIColor{
     static var backgroundBlue = UIColor(red: 0/255, green: 153/255, blue: 204/255, alpha: 1)
 }
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+    var mainButtonYConstraint: NSLayoutConstraint!
+    var mainButtonHeightConstraint: NSLayoutConstraint!
+    var mainButtonWidthConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .backgroundBlue
-        
         mainButtonLayout()
     }
+    
     
     let mainButton: UIButton = {
         let button = UIButton()
@@ -30,26 +34,38 @@ class ViewController: UIViewController {
         return button
     }()
     
+    // Handle the initial mainButton layout constraints
     func mainButtonLayout(){
         view.addSubview(mainButton)
-        NSLayoutConstraint.activate([
-            mainButton.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
-            mainButton.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor),
-            mainButton.widthAnchor.constraint(equalToConstant: 150),
-            mainButton.heightAnchor.constraint(equalToConstant: 150),
-            ])
+        
+        mainButtonYConstraint = mainButton.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor)
+        mainButtonWidthConstraint = mainButton.widthAnchor.constraint(equalToConstant: 150)
+        mainButtonHeightConstraint =  mainButton.heightAnchor.constraint(equalToConstant: 150)
+        
+        NSLayoutConstraint.activate([mainButton.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
+                                     mainButtonYConstraint,
+                                     mainButtonHeightConstraint,
+                                     mainButtonWidthConstraint
+                                    ])
     }
     
+    // Handle the animation of the button when tap
     @objc func mainButtonTapped(sender: UIButton){
-        if mainButton.layer.cornerRadius == 150.0 * 0.5{
-            print("The button has shrink")
+        if mainButtonYConstraint.constant == 0{
+            mainButtonYConstraint.constant = 250
+            mainButtonHeightConstraint.constant = 100
+            mainButtonWidthConstraint.constant = 100
+            mainButton.layer.cornerRadius = mainButtonHeightConstraint.constant * 0.5
             UIView.animate(withDuration: 0.5) {
-                self.mainButton.layer.cornerRadius = 75 * 0.5
+                self.view.layoutIfNeeded()
             }
         }else{
-            print("The button has expanded")
+            mainButtonYConstraint.constant = 0
+            mainButtonHeightConstraint.constant = 150
+            mainButtonWidthConstraint.constant = 150
+            mainButton.layer.cornerRadius = 75 * 0.5
             UIView.animate(withDuration: 0.5) {
-                self.mainButton.layer.cornerRadius = 150 * 0.5
+                self.view.layoutIfNeeded()
             }
         }
     }
