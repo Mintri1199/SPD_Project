@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		449B6D97219A062800446B6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B6D96219A062800446B6A /* AppDelegate.swift */; };
 		449B6D99219A062800446B6A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B6D98219A062800446B6A /* MainViewController.swift */; };
-		449B6D9C219A062800446B6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449B6D9A219A062800446B6A /* Main.storyboard */; };
 		449B6D9F219A062800446B6A /* Tofu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 449B6D9D219A062800446B6A /* Tofu.xcdatamodeld */; };
 		449B6DA1219A062900446B6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449B6DA0219A062900446B6A /* Assets.xcassets */; };
 		449B6DA4219A062900446B6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449B6DA2219A062900446B6A /* LaunchScreen.storyboard */; };
@@ -17,7 +16,11 @@
 		449B6DBA219A062900446B6A /* TofuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B6DB9219A062900446B6A /* TofuUITests.swift */; };
 		449B6E0F219BC84900446B6A /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B6E0E219BC84900446B6A /* ContainerView.swift */; };
 		449B6E13219BC8B300446B6A /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B6E12219BC8B300446B6A /* MainButton.swift */; };
-		449B6E15219BD02B00446B6A /* NestedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B6E14219BD02B00446B6A /* NestedTableView.swift */; };
+		44DF3997219F87500083CFFC /* TableShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF3996219F87500083CFFC /* TableShowViewController.swift */; };
+		44DF3999219FAE600083CFFC /* NestedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF3998219FAE600083CFFC /* NestedTableView.swift */; };
+		78460838676297500B9BA71B /* Pods_TofuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7297001CCB6CCAA6420974 /* Pods_TofuTests.framework */; };
+		86BED0E1D61B58A591A0CF06 /* Pods_Tofu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9374DFEE698DE8B1CAE6A919 /* Pods_Tofu.framework */; };
+		F3ED0347A62C2F5269879CE0 /* Pods_TofuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4316D12DCDE75BB656F898 /* Pods_TofuUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02131929C3D165BB1D2028B8 /* Pods-TofuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TofuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TofuTests/Pods-TofuTests.release.xcconfig"; sourceTree = "<group>"; };
+		420937CE5C6D729BE271CF55 /* Pods-Tofu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tofu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tofu/Pods-Tofu.debug.xcconfig"; sourceTree = "<group>"; };
 		449B6D93219A062800446B6A /* Tofu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tofu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		449B6D96219A062800446B6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		449B6D98219A062800446B6A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		449B6D9B219A062800446B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		449B6D9E219A062800446B6A /* Tofu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tofu.xcdatamodel; sourceTree = "<group>"; };
 		449B6DA0219A062900446B6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		449B6DA3219A062900446B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,7 +58,15 @@
 		449B6DBB219A062900446B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		449B6E0E219BC84900446B6A /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		449B6E12219BC8B300446B6A /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
-		449B6E14219BD02B00446B6A /* NestedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedTableView.swift; sourceTree = "<group>"; };
+		44DF3996219F87500083CFFC /* TableShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableShowViewController.swift; sourceTree = "<group>"; };
+		44DF3998219FAE600083CFFC /* NestedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedTableView.swift; sourceTree = "<group>"; };
+		5903213E44D7369E4CBBE491 /* Pods-TofuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TofuUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TofuUITests/Pods-TofuUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D4316D12DCDE75BB656F898 /* Pods_TofuUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TofuUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9374DFEE698DE8B1CAE6A919 /* Pods_Tofu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tofu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93FCAC5DB594633ADCA56708 /* Pods-TofuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TofuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TofuTests/Pods-TofuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B7297001CCB6CCAA6420974 /* Pods_TofuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TofuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D49CD356EE9E699C1144C8E9 /* Pods-Tofu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tofu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tofu/Pods-Tofu.release.xcconfig"; sourceTree = "<group>"; };
+		F9A4138FE9DD96BB5826CC44 /* Pods-TofuUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TofuUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TofuUITests/Pods-TofuUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86BED0E1D61B58A591A0CF06 /* Pods_Tofu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78460838676297500B9BA71B /* Pods_TofuTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +90,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3ED0347A62C2F5269879CE0 /* Pods_TofuUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4132185F2109002D92CC52B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				420937CE5C6D729BE271CF55 /* Pods-Tofu.debug.xcconfig */,
+				D49CD356EE9E699C1144C8E9 /* Pods-Tofu.release.xcconfig */,
+				93FCAC5DB594633ADCA56708 /* Pods-TofuTests.debug.xcconfig */,
+				02131929C3D165BB1D2028B8 /* Pods-TofuTests.release.xcconfig */,
+				5903213E44D7369E4CBBE491 /* Pods-TofuUITests.debug.xcconfig */,
+				F9A4138FE9DD96BB5826CC44 /* Pods-TofuUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		44561D33219D0DE2001FD8D4 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +120,7 @@
 		44561D34219D0DF0001FD8D4 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				44DF3998219FAE600083CFFC /* NestedTableView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -100,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				449B6D98219A062800446B6A /* MainViewController.swift */,
+				44DF3996219F87500083CFFC /* TableShowViewController.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -111,6 +141,8 @@
 				449B6DAD219A062900446B6A /* TofuTests */,
 				449B6DB8219A062900446B6A /* TofuUITests */,
 				449B6D94219A062800446B6A /* Products */,
+				4132185F2109002D92CC52B5 /* Pods */,
+				93225C686156CC2F6270C7B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,8 +165,6 @@
 				449B6D96219A062800446B6A /* AppDelegate.swift */,
 				449B6E0E219BC84900446B6A /* ContainerView.swift */,
 				449B6E12219BC8B300446B6A /* MainButton.swift */,
-				449B6E14219BD02B00446B6A /* NestedTableView.swift */,
-				449B6D9A219A062800446B6A /* Main.storyboard */,
 				449B6DA0219A062900446B6A /* Assets.xcassets */,
 				449B6DA2219A062900446B6A /* LaunchScreen.storyboard */,
 				449B6DA5219A062900446B6A /* Info.plist */,
@@ -161,6 +191,16 @@
 			path = TofuUITests;
 			sourceTree = "<group>";
 		};
+		93225C686156CC2F6270C7B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9374DFEE698DE8B1CAE6A919 /* Pods_Tofu.framework */,
+				9B7297001CCB6CCAA6420974 /* Pods_TofuTests.framework */,
+				8D4316D12DCDE75BB656F898 /* Pods_TofuUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 449B6DBE219A062900446B6A /* Build configuration list for PBXNativeTarget "Tofu" */;
 			buildPhases = (
+				4EC03C06FECAD1DB1C804485 /* [CP] Check Pods Manifest.lock */,
 				449B6D8F219A062800446B6A /* Sources */,
 				449B6D90219A062800446B6A /* Frameworks */,
 				449B6D91219A062800446B6A /* Resources */,
+				757F890B17A7F12F39DD5B90 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +227,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 449B6DC1219A062900446B6A /* Build configuration list for PBXNativeTarget "TofuTests" */;
 			buildPhases = (
+				99C0B4130A1943BC213231DC /* [CP] Check Pods Manifest.lock */,
 				449B6DA6219A062900446B6A /* Sources */,
 				449B6DA7219A062900446B6A /* Frameworks */,
 				449B6DA8219A062900446B6A /* Resources */,
@@ -203,6 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 449B6DC4219A062900446B6A /* Build configuration list for PBXNativeTarget "TofuUITests" */;
 			buildPhases = (
+				504DE387417BE84C7BFA4290 /* [CP] Check Pods Manifest.lock */,
 				449B6DB1219A062900446B6A /* Sources */,
 				449B6DB2219A062900446B6A /* Frameworks */,
 				449B6DB3219A062900446B6A /* Resources */,
@@ -267,7 +311,6 @@
 			files = (
 				449B6DA4219A062900446B6A /* LaunchScreen.storyboard in Resources */,
 				449B6DA1219A062900446B6A /* Assets.xcassets in Resources */,
-				449B6D9C219A062800446B6A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,16 +330,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4EC03C06FECAD1DB1C804485 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tofu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		504DE387417BE84C7BFA4290 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TofuUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		757F890B17A7F12F39DD5B90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tofu/Pods-Tofu-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tofu/Pods-Tofu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99C0B4130A1943BC213231DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TofuTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		449B6D8F219A062800446B6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				449B6E0F219BC84900446B6A /* ContainerView.swift in Sources */,
+				44DF3997219F87500083CFFC /* TableShowViewController.swift in Sources */,
 				449B6E13219BC8B300446B6A /* MainButton.swift in Sources */,
 				449B6D99219A062800446B6A /* MainViewController.swift in Sources */,
 				449B6D97219A062800446B6A /* AppDelegate.swift in Sources */,
-				449B6E15219BD02B00446B6A /* NestedTableView.swift in Sources */,
+				44DF3999219FAE600083CFFC /* NestedTableView.swift in Sources */,
 				449B6D9F219A062800446B6A /* Tofu.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,14 +468,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		449B6D9A219A062800446B6A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				449B6D9B219A062800446B6A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		449B6DA2219A062900446B6A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -470,6 +597,7 @@
 		};
 		449B6DBF219A062900446B6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 420937CE5C6D729BE271CF55 /* Pods-Tofu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -488,6 +616,7 @@
 		};
 		449B6DC0219A062900446B6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D49CD356EE9E699C1144C8E9 /* Pods-Tofu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -506,6 +635,7 @@
 		};
 		449B6DC2219A062900446B6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93FCAC5DB594633ADCA56708 /* Pods-TofuTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -527,6 +657,7 @@
 		};
 		449B6DC3219A062900446B6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02131929C3D165BB1D2028B8 /* Pods-TofuTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -548,6 +679,7 @@
 		};
 		449B6DC5219A062900446B6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5903213E44D7369E4CBBE491 /* Pods-TofuUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -568,6 +700,7 @@
 		};
 		449B6DC6219A062900446B6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9A4138FE9DD96BB5826CC44 /* Pods-TofuUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

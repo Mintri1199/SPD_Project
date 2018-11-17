@@ -13,10 +13,17 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var navigationController: UINavigationController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let mainView: ViewController = ViewController()
+        
+        navigationController = UINavigationController(rootViewController: mainView)
+        navigationController?.hero.isEnabled = true
+        if let window = self.window{
+            window.rootViewController = navigationController
+        }
         return true
     }
 
