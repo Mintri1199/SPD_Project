@@ -42,6 +42,7 @@ class ContentTableView: UITableView , UITableViewDelegate, UITableViewDataSource
         dataSource = self
         delegate = self
         separatorStyle = .none
+        backgroundColor = .clear
         register(ContentCell.self, forCellReuseIdentifier: cellId)
         //separatorStyle = .none
     }
@@ -56,7 +57,6 @@ class ContentTableView: UITableView , UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! ContentCell
-        cell.layer.cornerRadius = 40
         return cell
     }
 }

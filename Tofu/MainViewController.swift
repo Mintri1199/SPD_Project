@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     }
     // The container View that is going to be hidden initially
     let contain: UIView = {
-        let contain = UIView(frame: CGRect(x: UIScreen.main.bounds.width/2, y: UIScreen.main.bounds.height/2, width: 0, height: 0))
+        let contain = UIView(frame: CGRect(x: UIScreen.main.bounds.width/2, y: UIScreen.main.bounds.height/2 - 50, width: 0, height: 0))
         contain.hero.id = "containerView"
         contain.backgroundColor = .gray
         return contain

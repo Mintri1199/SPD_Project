@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import CoreLocation
+
+struct DataEntry {
+    var name: String
+    var description: String
+    var coordinate: CLLocationCoordinate2D
+    
+    
+}

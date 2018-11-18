@@ -9,23 +9,33 @@
 import UIKit
 
 class TableShowViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .backgroundBlue
-        view.addSubview(contain)
         makeMainButton()
-        
+        makeContainerView()
     }
     
     // The container View that is going to be hidden initially
-    let contain: UIView = {
-        let contain = UIView(frame: CGRect(x: 40, y: 50, width: 300, height: 400))
+    let contain: ContainerView = {
+        let contain = ContainerView()
+        contain.translatesAutoresizingMaskIntoConstraints = false
         contain.hero.id = "containerView"
-        contain.backgroundColor = .gray
         return contain
     }()
+    
+    func makeContainerView() {
+        view.addSubview(contain)
+        NSLayoutConstraint.activate([
+            contain.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
+            contain.bottomAnchor.constraint(equalTo: mainButton.topAnchor, constant: -16),
+            contain.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
+            contain.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
+            
+            ])
+    }
     
     // The Main button that is going to be a tofu character
     let mainButton: UIButton = {
@@ -38,13 +48,14 @@ class TableShowViewController: UIViewController {
         return button
     }()
     
+    
     // Handle the initial mainButton layout constraints
     func  makeMainButton() {
         view.addSubview(mainButton)
         
         NSLayoutConstraint.activate([
             mainButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            mainButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 200),
+            mainButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 300),
             mainButton.widthAnchor.constraint(equalToConstant: 75),
             mainButton.heightAnchor.constraint(equalToConstant: 75)
             ])

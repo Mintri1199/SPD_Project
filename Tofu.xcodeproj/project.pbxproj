@@ -17,7 +17,9 @@
 		449B6E0F219BC84900446B6A /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B6E0E219BC84900446B6A /* ContainerView.swift */; };
 		449B6E13219BC8B300446B6A /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B6E12219BC8B300446B6A /* MainButton.swift */; };
 		44DF3997219F87500083CFFC /* TableShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF3996219F87500083CFFC /* TableShowViewController.swift */; };
-		44DF3999219FAE600083CFFC /* NestedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF3998219FAE600083CFFC /* NestedTableView.swift */; };
+		44DF3A5A21A0C8FE0083CFFC /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF3A5921A0C8FE0083CFFC /* ContentCell.swift */; };
+		44DF3A5C21A0EECF0083CFFC /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF3A5B21A0EECF0083CFFC /* model.swift */; };
+		44DF3A5E21A11A400083CFFC /* ContentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF3A5D21A11A400083CFFC /* ContentDetailViewController.swift */; };
 		78460838676297500B9BA71B /* Pods_TofuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7297001CCB6CCAA6420974 /* Pods_TofuTests.framework */; };
 		86BED0E1D61B58A591A0CF06 /* Pods_Tofu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9374DFEE698DE8B1CAE6A919 /* Pods_Tofu.framework */; };
 		F3ED0347A62C2F5269879CE0 /* Pods_TofuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4316D12DCDE75BB656F898 /* Pods_TofuUITests.framework */; };
@@ -59,7 +61,9 @@
 		449B6E0E219BC84900446B6A /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		449B6E12219BC8B300446B6A /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		44DF3996219F87500083CFFC /* TableShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableShowViewController.swift; sourceTree = "<group>"; };
-		44DF3998219FAE600083CFFC /* NestedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedTableView.swift; sourceTree = "<group>"; };
+		44DF3A5921A0C8FE0083CFFC /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
+		44DF3A5B21A0EECF0083CFFC /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		44DF3A5D21A11A400083CFFC /* ContentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailViewController.swift; sourceTree = "<group>"; };
 		5903213E44D7369E4CBBE491 /* Pods-TofuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TofuUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TofuUITests/Pods-TofuUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D4316D12DCDE75BB656F898 /* Pods_TofuUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TofuUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9374DFEE698DE8B1CAE6A919 /* Pods_Tofu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tofu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +117,7 @@
 		44561D33219D0DE2001FD8D4 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				44DF3A5B21A0EECF0083CFFC /* model.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -120,7 +125,9 @@
 		44561D34219D0DF0001FD8D4 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				44DF3998219FAE600083CFFC /* NestedTableView.swift */,
+				449B6E0E219BC84900446B6A /* ContainerView.swift */,
+				44DF3A5921A0C8FE0083CFFC /* ContentCell.swift */,
+				449B6E12219BC8B300446B6A /* MainButton.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -129,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				449B6D98219A062800446B6A /* MainViewController.swift */,
+				44DF3A5D21A11A400083CFFC /* ContentDetailViewController.swift */,
 				44DF3996219F87500083CFFC /* TableShowViewController.swift */,
 			);
 			name = controller;
@@ -163,8 +171,6 @@
 				44561D34219D0DF0001FD8D4 /* view */,
 				44561D33219D0DE2001FD8D4 /* model */,
 				449B6D96219A062800446B6A /* AppDelegate.swift */,
-				449B6E0E219BC84900446B6A /* ContainerView.swift */,
-				449B6E12219BC8B300446B6A /* MainButton.swift */,
 				449B6DA0219A062900446B6A /* Assets.xcassets */,
 				449B6DA2219A062900446B6A /* LaunchScreen.storyboard */,
 				449B6DA5219A062900446B6A /* Info.plist */,
@@ -427,12 +433,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				449B6E0F219BC84900446B6A /* ContainerView.swift in Sources */,
+				44DF3A5A21A0C8FE0083CFFC /* ContentCell.swift in Sources */,
 				44DF3997219F87500083CFFC /* TableShowViewController.swift in Sources */,
+				44DF3A5E21A11A400083CFFC /* ContentDetailViewController.swift in Sources */,
 				449B6E13219BC8B300446B6A /* MainButton.swift in Sources */,
 				449B6D99219A062800446B6A /* MainViewController.swift in Sources */,
 				449B6D97219A062800446B6A /* AppDelegate.swift in Sources */,
-				44DF3999219FAE600083CFFC /* NestedTableView.swift in Sources */,
 				449B6D9F219A062800446B6A /* Tofu.xcdatamodeld in Sources */,
+				44DF3A5C21A0EECF0083CFFC /* model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
