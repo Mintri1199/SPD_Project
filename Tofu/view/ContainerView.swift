@@ -16,7 +16,7 @@ class ContainerView: UIView{
         super.init(frame: frame)
         
         backgroundColor = .lightGray
-        
+        layer.cornerRadius = 5
         addSubview(tableView)
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: topAnchor, constant: 15),
@@ -44,7 +44,6 @@ class ContentTableView: UITableView , UITableViewDelegate, UITableViewDataSource
         separatorStyle = .none
         backgroundColor = .clear
         register(ContentCell.self, forCellReuseIdentifier: cellId)
-        //separatorStyle = .none
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -58,5 +57,12 @@ class ContentTableView: UITableView , UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! ContentCell
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let nextVC = ContentDetailViewController()
+        print(indexPath)
+        window?.rootViewController?.present(ContentDetailViewController(), animated: true, completion: nil)
+        
+        
     }
 }

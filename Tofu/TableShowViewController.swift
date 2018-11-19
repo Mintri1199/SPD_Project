@@ -16,6 +16,7 @@ class TableShowViewController: UIViewController {
         view.backgroundColor = .backgroundBlue
         makeMainButton()
         makeContainerView()
+        
     }
     
     // The container View that is going to be hidden initially
@@ -27,6 +28,9 @@ class TableShowViewController: UIViewController {
     }()
     
     func makeContainerView() {
+//        addChild(childViewController)
+//        contain.addSubview(childViewController.view)
+//        childViewController.view.frame = contain.frame
         view.addSubview(contain)
         NSLayoutConstraint.activate([
             contain.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
@@ -65,5 +69,7 @@ class TableShowViewController: UIViewController {
         
         self.navigationController?.popToRootViewController(animated: true)
     }
+    
+
 
 }
