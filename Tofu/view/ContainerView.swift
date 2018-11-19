@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import CoreLocation
+
+var row = 0
 
 // Custom UIview that will have a table view inside it
 class ContainerView: UIView{
@@ -35,6 +38,25 @@ class ContainerView: UIView{
 class ContentTableView: UITableView , UITableViewDelegate, UITableViewDataSource {
     
     let cellId = "cellId"
+    let names = ["Golden Gate Bridge", "Golden Gate Park" , "The Exploratorium"]
+    let descriptions = [
+            "The Golden Gate Bridge's vaulting, orange arches amidst the rocky seascape of the San Francisco Bay have made it one of the West Coast's most enduring symbols and the city's most popular tourist attraction. The bridge's name, Golden Gate, actually refers to the body of water it spans (the Golden Gate Strait that connects the Pacific Ocean with the San Francisco Bay), and was built to make travel between San Francisco and Marin County an easier feat. ",
+            "The park offers so much to see and do, it could take an entire day to experience all that it has to offer. Trails, picturesque picnic spaces, playgrounds, sports courts, gardens, museums and more can be found within its evergreen borders. ",
+            "This museum, or as it refers to itself, a learning laboratory, features 600 hands-on exhibits that cover a plethora of subject matter, such as engineering, psychology, geography and biology. "
+    ]
+    let coordinates = [CLLocationCoordinate2D(latitude: 37.8199, longitude: 122.4783),
+                       CLLocationCoordinate2D(latitude: 37.76904, longitude: -122.483519),
+                       CLLocationCoordinate2D(latitude: 37.801542, longitude: -122.3996727)]
+    
+    func makeDataArray() -> [DataEntry]{
+        var listOfData = [DataEntry]()
+        for i in 0 ... 2 {
+            let dateEntry = DataEntry.init(name: names[i], description: descriptions[i], coordinate: coordinates[i])
+            listOfData.append(dateEntry)
+        }
+        return listOfData
+    }
+    
     
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
@@ -52,15 +74,24 @@ class ContentTableView: UITableView , UITableViewDelegate, UITableViewDataSource
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4    }
+        return makeDataArray().count
+        
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! ContentCell
+        let listOfData = makeDataArray()
+        
+        DataObject.addData(data: listOfData[indexPath.row])
+        
+        cell.contentLabel.text = DataObject.dataArray[indexPath.row].name
+        
         return cell
+    
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let nextVC = ContentDetailViewController()
-        print(indexPath)
+        row = indexPath.row
         window?.rootViewController?.present(ContentDetailViewController(), animated: true, completion: nil)
         
         

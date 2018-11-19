@@ -26,14 +26,16 @@ class DetailView: UIView {
     
     
     func makeStackView () {
+        let data = DataObject.dataArray[row]
         let stackView = UIStackView(arrangedSubviews: [imageView, textView])
         stackView.axis = .vertical
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.distribution = .fillEqually
         stackView.spacing = 0
         
-        textView.text = "asdkjfhacknvbsxcbvafuhasfinoacylfhbnajklsnhfhjxasogfbcjasdhfbjkahnxhjfgbjxhsgfncsiuyfgjhxgadjksgjfgksxjfgkadjfgnodhfgjncxbvz hvg czhjvg zjgvjkzgnvjzkngvjkzhmvsngfcjkhgnfkjagnfxhjasdknfjgcakbghfxkanfgaxkjgn"
         textView.textAlignment = .left
+        textView.text = data.description
+        textView.font = UIFont.init(name: "Helvetica", size: 16)
         textView.isUserInteractionEnabled = false
         
         imageView.backgroundColor = .blue
