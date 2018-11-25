@@ -28,9 +28,6 @@ class TableShowViewController: UIViewController {
     }()
     
     func makeContainerView() {
-//        addChild(childViewController)
-//        contain.addSubview(childViewController.view)
-//        childViewController.view.frame = contain.frame
         view.addSubview(contain)
         NSLayoutConstraint.activate([
             contain.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),

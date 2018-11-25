@@ -12,6 +12,7 @@ import CoreLocation
 struct DataEntry {
     var name: String
     var description: String
+    var imageName: String
     var coordinate: CLLocationCoordinate2D
     
     

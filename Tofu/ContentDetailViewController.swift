@@ -7,15 +7,18 @@
 //
 
 import UIKit
-
+import MapKit
 class ContentDetailViewController: UIViewController {
-
+    
+    var coordinate: CLLocationCoordinate2D?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .backgroundBlue
-        
+
         makeMainButton()
         detailView()
+        makeMapButton()
     }
     
     let contentView: DetailView = {
@@ -41,7 +44,7 @@ class ContentDetailViewController: UIViewController {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = .white
-        button.layer.cornerRadius = 75 * 0.5
+        button.layer.cornerRadius = 60 * 0.5
         button.hero.id = "MainButton"
         button.addTarget(self, action: #selector(buttonUnwind), for: .touchUpInside)
         return button
@@ -53,11 +56,51 @@ class ContentDetailViewController: UIViewController {
         NSLayoutConstraint.activate([
             mainButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -36),
             mainButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0),
-            mainButton.widthAnchor.constraint(equalToConstant: 75),
-            mainButton.heightAnchor.constraint(equalToConstant: 75)
+            mainButton.widthAnchor.constraint(equalToConstant: 60),
+            mainButton.heightAnchor.constraint(equalToConstant: 60)
             ])
     }
     
+    let mapButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Get Direction", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.titleLabel?.textColor = .blue
+        
+        button.addTarget(self, action: #selector(mapButtonTapped), for: .touchUpInside)
+        return button
+    }()
+    
+    func makeMapButton(){
+        view.addSubview(mapButton)
+        mapButton.layer.cornerRadius = 10
+        NSLayoutConstraint.activate([
+            mapButton.widthAnchor.constraint(equalToConstant: 160),
+            mapButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            mapButton.topAnchor.constraint(equalTo: mainButton.topAnchor),
+            mapButton.bottomAnchor.constraint(equalTo: mainButton.bottomAnchor),
+            mapButton.trailingAnchor.constraint(lessThanOrEqualTo: mainButton.leadingAnchor, constant: 16)
+            ])
+    }
+    
+    
+    @objc func mapButtonTapped(){
+        guard let location = coordinate else {
+            return print("There are no coordinate")
+        }
+        
+        let regionSpan = MKCoordinateSpan(latitudeDelta: location.latitude, longitudeDelta: location.longitude)
+        
+        let options = [MKLaunchOptionsMapCenterKey: NSValue(mkCoordinateSpan: regionSpan), MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan)]
+        
+        let placeMark = MKPlacemark(coordinate: location)
+        let mapItems = MKMapItem(placemark: placeMark)
+        mapItems.name = DataObject.dataArray[row].name
+        
+        mapItems.openInMaps(launchOptions: options)
+        print(location)
+        
+    }
     
     @objc func buttonUnwind(){
         self.dismiss(animated: true, completion: nil)

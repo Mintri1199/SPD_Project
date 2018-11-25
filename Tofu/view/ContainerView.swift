@@ -39,6 +39,7 @@ class ContentTableView: UITableView , UITableViewDelegate, UITableViewDataSource
     
     let cellId = "cellId"
     let names = ["Golden Gate Bridge", "Golden Gate Park" , "The Exploratorium"]
+    let imageNames = ["goldenBridge","goldenGatePark","theExploratorium"]
     let descriptions = [
             "The Golden Gate Bridge's vaulting, orange arches amidst the rocky seascape of the San Francisco Bay have made it one of the West Coast's most enduring symbols and the city's most popular tourist attraction. The bridge's name, Golden Gate, actually refers to the body of water it spans (the Golden Gate Strait that connects the Pacific Ocean with the San Francisco Bay), and was built to make travel between San Francisco and Marin County an easier feat. ",
             "The park offers so much to see and do, it could take an entire day to experience all that it has to offer. Trails, picturesque picnic spaces, playgrounds, sports courts, gardens, museums and more can be found within its evergreen borders. ",
@@ -51,7 +52,7 @@ class ContentTableView: UITableView , UITableViewDelegate, UITableViewDataSource
     func makeDataArray() -> [DataEntry]{
         var listOfData = [DataEntry]()
         for i in 0 ... 2 {
-            let dateEntry = DataEntry.init(name: names[i], description: descriptions[i], coordinate: coordinates[i])
+            let dateEntry = DataEntry.init(name: names[i], description: descriptions[i], imageName: imageNames[i], coordinate: coordinates[i])
             listOfData.append(dateEntry)
         }
         return listOfData
@@ -92,8 +93,9 @@ class ContentTableView: UITableView , UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         row = indexPath.row
-        window?.rootViewController?.present(ContentDetailViewController(), animated: true, completion: nil)
-        
-        
+        let nextVC = ContentDetailViewController()
+        nextVC.coordinate = DataObject.dataArray[row].coordinate
+        print(row)
+        window?.rootViewController?.present(nextVC, animated: true, completion: nil)
     }
 }
