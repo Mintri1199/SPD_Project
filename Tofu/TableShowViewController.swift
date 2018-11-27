@@ -15,45 +15,64 @@ class TableShowViewController: UIViewController {
         
         view.backgroundColor = .backgroundBlue
         makeMainButton()
-        makeContainerView()
-        
+//        makeContainerView()
+        makeCollectionView()
     }
     
-    // The container View that is going to be hidden initially
-    let contain: ContainerView = {
-        let contain = ContainerView()
-        contain.translatesAutoresizingMaskIntoConstraints = false
-        contain.hero.id = "containerView"
-        return contain
+    let collectionView: CollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        let cv = CollectionView(frame: .zero, collectionViewLayout: layout)
+        cv.translatesAutoresizingMaskIntoConstraints = false
+        cv.hero.id = "containerView"
+        return cv
     }()
     
-    func makeContainerView() {
-        view.addSubview(contain)
+    func makeCollectionView(){
+        view.addSubview(collectionView)
         NSLayoutConstraint.activate([
-            contain.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
-            contain.bottomAnchor.constraint(equalTo: mainButton.topAnchor, constant: -16),
-            contain.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
-            contain.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
+            collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
+            collectionView.bottomAnchor.constraint(equalTo: mainButton.topAnchor, constant: -16),
+            collectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
+            collectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
             
             ])
     }
     
+//    let contain: ContainerView = {
+//        let contain = ContainerView()
+//        contain.translatesAutoresizingMaskIntoConstraints = false
+//        contain.hero.id = "containerView"
+//        return contain
+//    }()
+//
+//    func makeContainerView() {
+//        view.addSubview(contain)
+//        NSLayoutConstraint.activate([
+//            contain.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
+//            contain.bottomAnchor.constraint(equalTo: mainButton.topAnchor, constant: -16),
+//            contain.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
+//            contain.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
+//
+//            ])
+//    }
+
     // The Main button that is going to be a tofu character
     let mainButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = .white
+        button.backgroundColor = .mainButtonColor
         button.layer.cornerRadius = 75 * 0.5
         button.hero.id = "MainButton"
         button.addTarget(self, action: #selector(buttonUnwind), for: .touchUpInside)
         return button
     }()
-    
-    
+
+
     // Handle the initial mainButton layout constraints
     func  makeMainButton() {
         view.addSubview(mainButton)
-        
+
         NSLayoutConstraint.activate([
             mainButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             mainButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 300),
@@ -61,9 +80,9 @@ class TableShowViewController: UIViewController {
             mainButton.heightAnchor.constraint(equalToConstant: 75)
             ])
     }
-    
+
     @objc func buttonUnwind(){
-        
+
         self.navigationController?.popToRootViewController(animated: true)
     }
     

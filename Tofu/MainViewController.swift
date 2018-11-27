@@ -9,9 +9,7 @@
 import UIKit
 import Hero
 
-extension UIColor{
-    static var backgroundBlue = UIColor(red: 0/255, green: 153/255, blue: 204/255, alpha: 1)
-}
+
 
 class ViewController: UIViewController {
     
@@ -27,7 +25,6 @@ class ViewController: UIViewController {
     let contain: UIView = {
         let contain = UIView(frame: CGRect(x: UIScreen.main.bounds.width/2, y: UIScreen.main.bounds.height/2 - 50, width: 0, height: 0))
         contain.hero.id = "containerView"
-        contain.backgroundColor = .gray
         return contain
     }()
 
@@ -35,7 +32,7 @@ class ViewController: UIViewController {
     let mainButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = .white
+        button.backgroundColor = .mainButtonColor
         button.layer.cornerRadius = CGFloat(75 * 0.5)
         button.hero.id = "MainButton"
         button.addTarget(self, action: #selector(mainButtonTapped), for: .touchUpInside)

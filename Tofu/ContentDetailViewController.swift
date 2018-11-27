@@ -43,8 +43,8 @@ class ContentDetailViewController: UIViewController {
     let mainButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = .white
         button.layer.cornerRadius = 60 * 0.5
+        button.backgroundColor = .mainButtonColor
         button.hero.id = "MainButton"
         button.addTarget(self, action: #selector(buttonUnwind), for: .touchUpInside)
         return button
@@ -65,7 +65,8 @@ class ContentDetailViewController: UIViewController {
         let button = UIButton()
         button.setTitle("Get Direction", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.titleLabel?.textColor = .blue
+        button.backgroundColor = .mainButtonColor
+        button.setTitleColor(.textColor, for: .normal)
         
         button.addTarget(self, action: #selector(mapButtonTapped), for: .touchUpInside)
         return button

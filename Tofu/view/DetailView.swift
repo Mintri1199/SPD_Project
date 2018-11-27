@@ -33,10 +33,11 @@ class DetailView: UIView {
         stackView.distribution = .fillEqually
         stackView.spacing = 0
         imageView.image = UIImage(named: data.imageName)
-        imageView.backgroundColor = .white
         imageView.contentMode = .scaleToFill
         textView.textAlignment = .left
         textView.text = data.description
+        textView.textColor = .textColor
+        textView.backgroundColor = .textViewColor
         textView.font = UIFont.init(name: "Helvetica", size: 16)
         textView.isUserInteractionEnabled = false
         

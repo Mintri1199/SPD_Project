@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		446B710B21AD30440072B595 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B710A21AD30440072B595 /* UIColorExtensions.swift */; };
+		446B710F21AD35B10072B595 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B710E21AD35B10072B595 /* CollectionView.swift */; };
+		446B711121AD36410072B595 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B711021AD36410072B595 /* CollectionViewCell.swift */; };
 		449B6D97219A062800446B6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B6D96219A062800446B6A /* AppDelegate.swift */; };
 		449B6D99219A062800446B6A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B6D98219A062800446B6A /* MainViewController.swift */; };
 		449B6D9F219A062800446B6A /* Tofu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 449B6D9D219A062800446B6A /* Tofu.xcdatamodeld */; };
@@ -14,10 +17,8 @@
 		449B6DA4219A062900446B6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449B6DA2219A062900446B6A /* LaunchScreen.storyboard */; };
 		449B6DAF219A062900446B6A /* TofuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B6DAE219A062900446B6A /* TofuTests.swift */; };
 		449B6DBA219A062900446B6A /* TofuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B6DB9219A062900446B6A /* TofuUITests.swift */; };
-		449B6E0F219BC84900446B6A /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B6E0E219BC84900446B6A /* ContainerView.swift */; };
 		449B6E13219BC8B300446B6A /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B6E12219BC8B300446B6A /* MainButton.swift */; };
 		44DF3997219F87500083CFFC /* TableShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF3996219F87500083CFFC /* TableShowViewController.swift */; };
-		44DF3A5A21A0C8FE0083CFFC /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF3A5921A0C8FE0083CFFC /* ContentCell.swift */; };
 		44DF3A5C21A0EECF0083CFFC /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF3A5B21A0EECF0083CFFC /* model.swift */; };
 		44DF3A5E21A11A400083CFFC /* ContentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF3A5D21A11A400083CFFC /* ContentDetailViewController.swift */; };
 		44DF3A6021A143C10083CFFC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF3A5F21A143C10083CFFC /* DetailView.swift */; };
@@ -47,6 +48,9 @@
 /* Begin PBXFileReference section */
 		02131929C3D165BB1D2028B8 /* Pods-TofuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TofuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TofuTests/Pods-TofuTests.release.xcconfig"; sourceTree = "<group>"; };
 		420937CE5C6D729BE271CF55 /* Pods-Tofu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tofu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tofu/Pods-Tofu.debug.xcconfig"; sourceTree = "<group>"; };
+		446B710A21AD30440072B595 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		446B710E21AD35B10072B595 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		446B711021AD36410072B595 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		449B6D93219A062800446B6A /* Tofu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tofu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		449B6D96219A062800446B6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		449B6D98219A062800446B6A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -60,10 +64,8 @@
 		449B6DB5219A062900446B6A /* TofuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TofuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		449B6DB9219A062900446B6A /* TofuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TofuUITests.swift; sourceTree = "<group>"; };
 		449B6DBB219A062900446B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		449B6E0E219BC84900446B6A /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		449B6E12219BC8B300446B6A /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		44DF3996219F87500083CFFC /* TableShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableShowViewController.swift; sourceTree = "<group>"; };
-		44DF3A5921A0C8FE0083CFFC /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
 		44DF3A5B21A0EECF0083CFFC /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		44DF3A5D21A11A400083CFFC /* ContentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailViewController.swift; sourceTree = "<group>"; };
 		44DF3A5F21A143C10083CFFC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -130,8 +132,8 @@
 		44561D34219D0DF0001FD8D4 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				449B6E0E219BC84900446B6A /* ContainerView.swift */,
-				44DF3A5921A0C8FE0083CFFC /* ContentCell.swift */,
+				446B710E21AD35B10072B595 /* CollectionView.swift */,
+				446B711021AD36410072B595 /* CollectionViewCell.swift */,
 				449B6E12219BC8B300446B6A /* MainButton.swift */,
 				44DF3A5F21A143C10083CFFC /* DetailView.swift */,
 			);
@@ -177,6 +179,7 @@
 				44561D34219D0DF0001FD8D4 /* view */,
 				44561D33219D0DE2001FD8D4 /* model */,
 				449B6D96219A062800446B6A /* AppDelegate.swift */,
+				446B710A21AD30440072B595 /* UIColorExtensions.swift */,
 				449B6DA0219A062900446B6A /* Assets.xcassets */,
 				449B6DA2219A062900446B6A /* LaunchScreen.storyboard */,
 				449B6DA5219A062900446B6A /* Info.plist */,
@@ -438,9 +441,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				449B6E0F219BC84900446B6A /* ContainerView.swift in Sources */,
-				44DF3A5A21A0C8FE0083CFFC /* ContentCell.swift in Sources */,
+				446B710F21AD35B10072B595 /* CollectionView.swift in Sources */,
 				44DF3A6221A33CF30083CFFC /* DataObject.swift in Sources */,
+				446B711121AD36410072B595 /* CollectionViewCell.swift in Sources */,
+				446B710B21AD30440072B595 /* UIColorExtensions.swift in Sources */,
 				44DF3997219F87500083CFFC /* TableShowViewController.swift in Sources */,
 				44DF3A6021A143C10083CFFC /* DetailView.swift in Sources */,
 				44DF3A5E21A11A400083CFFC /* ContentDetailViewController.swift in Sources */,
