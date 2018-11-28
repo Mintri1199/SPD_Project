@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     let mainButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = .mainButtonColor
+        button.backgroundColor = .textViewColor
         button.layer.cornerRadius = CGFloat(75 * 0.5)
         button.hero.id = "MainButton"
         button.addTarget(self, action: #selector(mainButtonTapped), for: .touchUpInside)

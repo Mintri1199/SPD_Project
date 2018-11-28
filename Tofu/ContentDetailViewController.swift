@@ -44,7 +44,7 @@ class ContentDetailViewController: UIViewController {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 60 * 0.5
-        button.backgroundColor = .mainButtonColor
+        button.backgroundColor = .textViewColor
         button.hero.id = "MainButton"
         button.addTarget(self, action: #selector(buttonUnwind), for: .touchUpInside)
         return button
@@ -65,9 +65,10 @@ class ContentDetailViewController: UIViewController {
         let button = UIButton()
         button.setTitle("Get Direction", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = .mainButtonColor
+        button.backgroundColor = .textViewColor
+        button.hero.id = "MapButton"
         button.setTitleColor(.textColor, for: .normal)
-        
+        button.titleLabel?.font = UIFont(name: "Helvetica", size: 20)
         button.addTarget(self, action: #selector(mapButtonTapped), for: .touchUpInside)
         return button
     }()
@@ -104,7 +105,7 @@ class ContentDetailViewController: UIViewController {
     }
     
     @objc func buttonUnwind(){
-        self.dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
 }

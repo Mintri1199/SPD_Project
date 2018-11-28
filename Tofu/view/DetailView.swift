@@ -31,15 +31,20 @@ class DetailView: UIView {
         stackView.axis = .vertical
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.distribution = .fillEqually
-        stackView.spacing = 0
+        stackView.spacing = 10
         imageView.image = UIImage(named: data.imageName)
         imageView.contentMode = .scaleToFill
+        
         textView.textAlignment = .left
+        textView.isScrollEnabled = true
+        textView.showsVerticalScrollIndicator = true
+        textView.isUserInteractionEnabled = true
+        textView.isEditable = false
+        textView.layer.cornerRadius = 10
         textView.text = data.description
         textView.textColor = .textColor
         textView.backgroundColor = .textViewColor
-        textView.font = UIFont.init(name: "Helvetica", size: 16)
-        textView.isUserInteractionEnabled = false
+        textView.font = UIFont.init(name: "Helvetica", size: 20)
         
         print(data.coordinate)
     

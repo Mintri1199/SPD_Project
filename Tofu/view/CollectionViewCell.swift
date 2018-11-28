@@ -13,7 +13,6 @@ class CollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         backgroundColor = .collectionCellColor
         layer.cornerRadius = 10
         setUpLabel()
@@ -24,10 +23,17 @@ class CollectionViewCell: UICollectionViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
         label.text = ""
+        label.font = UIFont(name: "Helvetica", size: 26)
         label.textAlignment = .center
         label.backgroundColor = .clear
         return label
     }()
+    
+    override var isHighlighted: Bool {
+        didSet {
+            backgroundColor = .textViewColor
+        }
+    }
     
     private func setUpLabel() {
         addSubview(nameLabel)

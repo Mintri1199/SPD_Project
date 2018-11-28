@@ -10,6 +10,7 @@
 		446B710B21AD30440072B595 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B710A21AD30440072B595 /* UIColorExtensions.swift */; };
 		446B710F21AD35B10072B595 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B710E21AD35B10072B595 /* CollectionView.swift */; };
 		446B711121AD36410072B595 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B711021AD36410072B595 /* CollectionViewCell.swift */; };
+		446B711D21AE857D0072B595 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B711C21AE857D0072B595 /* MockData.swift */; };
 		449B6D97219A062800446B6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B6D96219A062800446B6A /* AppDelegate.swift */; };
 		449B6D99219A062800446B6A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B6D98219A062800446B6A /* MainViewController.swift */; };
 		449B6D9F219A062800446B6A /* Tofu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 449B6D9D219A062800446B6A /* Tofu.xcdatamodeld */; };
@@ -51,6 +52,7 @@
 		446B710A21AD30440072B595 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		446B710E21AD35B10072B595 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		446B711021AD36410072B595 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		446B711C21AE857D0072B595 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		449B6D93219A062800446B6A /* Tofu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tofu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		449B6D96219A062800446B6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		449B6D98219A062800446B6A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				44561D34219D0DF0001FD8D4 /* view */,
 				44561D33219D0DE2001FD8D4 /* model */,
 				449B6D96219A062800446B6A /* AppDelegate.swift */,
+				446B711C21AE857D0072B595 /* MockData.swift */,
 				446B710A21AD30440072B595 /* UIColorExtensions.swift */,
 				449B6DA0219A062900446B6A /* Assets.xcassets */,
 				449B6DA2219A062900446B6A /* LaunchScreen.storyboard */,
@@ -444,6 +447,7 @@
 				446B710F21AD35B10072B595 /* CollectionView.swift in Sources */,
 				44DF3A6221A33CF30083CFFC /* DataObject.swift in Sources */,
 				446B711121AD36410072B595 /* CollectionViewCell.swift in Sources */,
+				446B711D21AE857D0072B595 /* MockData.swift in Sources */,
 				446B710B21AD30440072B595 /* UIColorExtensions.swift in Sources */,
 				44DF3997219F87500083CFFC /* TableShowViewController.swift in Sources */,
 				44DF3A6021A143C10083CFFC /* DetailView.swift in Sources */,

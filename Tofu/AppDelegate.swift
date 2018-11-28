@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationController = UINavigationController(rootViewController: mainView)
         navigationController?.hero.isEnabled = true
         
-        let testView: TestViewController = TestViewController()
+        
         if let window = window {
             window.rootViewController = navigationController
             window.makeKeyAndVisible()
