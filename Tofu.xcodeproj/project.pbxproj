@@ -24,6 +24,7 @@
 		44DF3A5E21A11A400083CFFC /* ContentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF3A5D21A11A400083CFFC /* ContentDetailViewController.swift */; };
 		44DF3A6021A143C10083CFFC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF3A5F21A143C10083CFFC /* DetailView.swift */; };
 		44DF3A6221A33CF30083CFFC /* DataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF3A6121A33CF30083CFFC /* DataObject.swift */; };
+		44DF9CCF21B0AAC1007BD685 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44DF9CCE21B0AAC0007BD685 /* GoogleService-Info.plist */; };
 		78460838676297500B9BA71B /* Pods_TofuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7297001CCB6CCAA6420974 /* Pods_TofuTests.framework */; };
 		86BED0E1D61B58A591A0CF06 /* Pods_Tofu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9374DFEE698DE8B1CAE6A919 /* Pods_Tofu.framework */; };
 		F3ED0347A62C2F5269879CE0 /* Pods_TofuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4316D12DCDE75BB656F898 /* Pods_TofuUITests.framework */; };
@@ -72,6 +73,7 @@
 		44DF3A5D21A11A400083CFFC /* ContentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailViewController.swift; sourceTree = "<group>"; };
 		44DF3A5F21A143C10083CFFC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		44DF3A6121A33CF30083CFFC /* DataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataObject.swift; sourceTree = "<group>"; };
+		44DF9CCE21B0AAC0007BD685 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5903213E44D7369E4CBBE491 /* Pods-TofuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TofuUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TofuUITests/Pods-TofuUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D4316D12DCDE75BB656F898 /* Pods_TofuUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TofuUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9374DFEE698DE8B1CAE6A919 /* Pods_Tofu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tofu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +188,7 @@
 				449B6DA0219A062900446B6A /* Assets.xcassets */,
 				449B6DA2219A062900446B6A /* LaunchScreen.storyboard */,
 				449B6DA5219A062900446B6A /* Info.plist */,
+				44DF9CCE21B0AAC0007BD685 /* GoogleService-Info.plist */,
 				449B6D9D219A062800446B6A /* Tofu.xcdatamodeld */,
 			);
 			path = Tofu;
@@ -329,6 +332,7 @@
 			files = (
 				449B6DA4219A062900446B6A /* LaunchScreen.storyboard in Resources */,
 				449B6DA1219A062900446B6A /* Assets.xcassets in Resources */,
+				44DF9CCF21B0AAC1007BD685 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,13 +406,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Tofu/Pods-Tofu-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -624,6 +632,7 @@
 			baseConfigurationReference = 420937CE5C6D729BE271CF55 /* Pods-Tofu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XYLZ368J9Q;
 				INFOPLIST_FILE = Tofu/Info.plist;
@@ -633,6 +642,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.jacksonHo.Tofu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -643,6 +653,7 @@
 			baseConfigurationReference = D49CD356EE9E699C1144C8E9 /* Pods-Tofu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XYLZ368J9Q;
 				INFOPLIST_FILE = Tofu/Info.plist;
@@ -652,6 +663,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.jacksonHo.Tofu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

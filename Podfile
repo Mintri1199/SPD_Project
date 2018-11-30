@@ -7,6 +7,8 @@ target 'Tofu' do
 
   # Pods for Tofu
   pod 'Hero'
+  pod 'Firebase/Core'
+  pod 'Crashlytics'
   target 'TofuTests' do
     inherit! :search_paths
     # Pods for testing
