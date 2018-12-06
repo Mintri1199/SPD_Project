@@ -67,7 +67,7 @@ class CollectionView: UICollectionView, UICollectionViewDataSource, UICollection
         cell.backgroundColor = .collectionCellColor
         row = indexPath.row
         let nextVC = ContentDetailViewController()
-        nextVC.coordinate = DataObject.dataArray[row].coordinate
+        nextVC.coordinate = DataObject.dataArray[indexPath.row].coordinate
         print(row)
         navigationController.pushViewController(nextVC, animated: true)
     }

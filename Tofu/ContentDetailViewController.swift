@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+
 class ContentDetailViewController: UIViewController {
     
     var coordinate: CLLocationCoordinate2D?
