@@ -88,6 +88,7 @@ class ContentDetailViewController: UIViewController {
     
     
     @objc func mapButtonTapped(){
+        // coordinate is a type CLLocationCoordinate2D
         guard let location = coordinate else {
             return print("There are no coordinate")
         }
@@ -96,11 +97,12 @@ class ContentDetailViewController: UIViewController {
         
         let options = [MKLaunchOptionsMapCenterKey: NSValue(mkCoordinateSpan: regionSpan), MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan)]
         
-        let placeMark = MKPlacemark(coordinate: location)
-        let mapItems = MKMapItem(placemark: placeMark)
-        mapItems.name = DataObject.dataArray[row].name
+        // Aesthetic add in
+        let placeMark = MKPlacemark(coordinate: location) // pin
+        let mapItems = MKMapItem(placemark: placeMark)  // the bottom two is for the name showing up
+        mapItems.name = DataObject.dataArray[row].name  //
         
-        mapItems.openInMaps(launchOptions: options)
+        mapItems.openInMaps(launchOptions: options)     // function that open maps
         print(location)
         
     }

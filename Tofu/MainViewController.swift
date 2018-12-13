@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         makeMainButton()
         view.hero.id = "mainViewController"
         view.addSubview(contain)
+        getPlaces()
     }
     // The container View that is going to be hidden initially
     let contain: UIView = {
