@@ -20,16 +20,9 @@ func getPlaces() {
     guard let url = URL(string: "https://spd-place.herokuapp.com/37.801542,-122.3996727") else {return}
     
     let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
-        guard let dataResponse = data, error == nil else {print(error?.localizedDescription ?? "Response Error")
-            return}
-        do {
-            let jsonResponse = try JSONSerialization.jsonObject(with: dataResponse, options: [])
-            
-            print(jsonResponse)
-            
-        }catch{
-            print("error")
-        }
+        guard let dataResponse = data, error == nil else { print(error?.localizedDescription ?? "Response Error")
+            return }
     }
-    task.resume()
+    
+    
 }
